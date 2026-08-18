@@ -1,0 +1,27 @@
+{
+  "name": "trainedby-streeq",
+  "description": "Official TRAINEDBY and STREEQ plugins for Grok Build.",
+  "owner": {
+    "name": "Average People Ltd"
+  },
+  "plugins": [
+    {
+      "name": "trainedby",
+      "description": "TRAINEDBY coaching tools: roster, client evidence, and coach-controlled drafts.",
+      "category": "productivity",
+      "source": { "type": "local", "path": "./plugins/trainedby" },
+      "homepage": "https://www.trainedby.fit/connect-ai",
+      "keywords": ["trainedby", "trainedby.fit", "trainedby coach"],
+      "domains": ["trainedby.fit", "www.trainedby.fit", "mcp.trainedby.fit"]
+    },
+    {
+      "name": "streeq",
+      "description": "STREEQ personal fitness record: workouts, meals, and self-managed plans.",
+      "category": "productivity",
+      "source": { "type": "local", "path": "./plugins/streeq" },
+      "homepage": "https://streeq.app/connect-ai",
+      "keywords": ["streeq", "streeq.app"],
+      "domains": ["streeq.app", "www.streeq.app", "mcp.streeq.app"]
+    }
+  ]
+}

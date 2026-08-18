@@ -1,0 +1,13 @@
+{
+  "name": "streeq",
+  "version": "1.0.0",
+  "description": "STREEQ personal fitness MCP for Grok. Work with your workouts, meals, and self-managed plan after OAuth sign-in.",
+  "author": {
+    "name": "Average People Ltd"
+  },
+  "homepage": "https://streeq.app/connect-ai",
+  "repository": "https://github.com/theaverageapp/grok-plugins",
+  "license": "MIT",
+  "mcpServers": "./.mcp.json",
+  "keywords": ["streeq", "streeq.app"]
+}
