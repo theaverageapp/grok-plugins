@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "streeq": {
+      "type": "streamable-http",
+      "url": "https://mcp.streeq.app/streeq/mcp"
+    }
+  }
+}

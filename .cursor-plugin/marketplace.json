@@ -1,0 +1,23 @@
+{
+  "name": "trainedby-streeq",
+  "owner": {
+    "name": "TRAINEDBY FIT LTD",
+    "email": "viv@trainedby.fit"
+  },
+  "metadata": {
+    "description": "Official STREEQ and TRAINEDBY plugins: your fitness record, and coaching tools for personal trainers.",
+    "version": "1.1.0"
+  },
+  "plugins": [
+    {
+      "name": "streeq",
+      "source": "./plugins/streeq",
+      "description": "STREEQ personal fitness record: workouts, meals, weight, goals and plans. Sign in with your STREEQ account."
+    },
+    {
+      "name": "trainedby",
+      "source": "./plugins/trainedby",
+      "description": "TRAINEDBY coaching tools: roster, client evidence, and drafts the coach approves. Sign in with your TRAINEDBY coach account."
+    }
+  ]
+}

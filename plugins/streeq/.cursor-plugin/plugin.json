@@ -1,0 +1,16 @@
+{
+  "name": "streeq",
+  "displayName": "STREEQ",
+  "version": "1.1.0",
+  "description": "Your fitness record in your AI: workouts, food, weight, goals and what is due today. Build a workout plan, preview it, and save it after you agree. Sign in with your STREEQ account.",
+  "author": {
+    "name": "TRAINEDBY FIT LTD",
+    "email": "viv@trainedby.fit",
+    "url": "https://streeq.app"
+  },
+  "homepage": "https://streeq.app/connect-ai",
+  "repository": "https://github.com/theaverageapp/grok-plugins",
+  "license": "MIT",
+  "keywords": ["mcp", "fitness", "workouts", "nutrition", "health", "streeq"],
+  "logo": "assets/logo.svg"
+}

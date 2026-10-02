@@ -1,35 +1,36 @@
-# Grok plugins for TRAINEDBY and STREEQ
+# STREEQ and TRAINEDBY plugins
 
-Public Grok Build plugins that attach the hosted MCP servers for [TRAINEDBY](https://www.trainedby.fit) and [STREEQ](https://streeq.app).
+Official plugins that connect your AI to the hosted MCP servers for [STREEQ](https://streeq.app) and [TRAINEDBY](https://www.trainedby.fit). One repo, three formats:
 
-These plugins do not run local code. They point Grok at the official HTTPS MCP endpoints. Users sign in with OAuth (Auth0). No API keys are stored in this repo.
+- **Cursor and Grok Bot:** `.cursor-plugin/` (Grok Bot uses the same plugins as Cursor)
+- **Grok Build:** `.grok-plugin/`
+- Any MCP client: use the URLs below
+
+These plugins run no local code. They point your AI at the official HTTPS MCP servers, and you sign in with your own STREEQ or TRAINEDBY account. No API keys or tokens are stored in this repo.
 
 | Plugin | Who it is for | MCP URL | Docs |
 | --- | --- | --- | --- |
+| `streeq` | People keeping their own fitness record | `https://mcp.streeq.app/streeq/mcp` | https://streeq.app/connect-ai |
 | `trainedby` | Coaches | `https://mcp.trainedby.fit/mcp` | https://www.trainedby.fit/connect-ai |
-| `streeq` | People managing their own record | `https://mcp.streeq.app/streeq/mcp` | https://streeq.app/connect-ai |
 
 ## Install
 
-From the official xAI marketplace once the PR is merged, search **TRAINEDBY** or **STREEQ** in `/marketplace`.
+**Cursor and Grok Bot:** find **STREEQ** or **TRAINEDBY** in the plugin marketplace and choose Add. Before it is listed, add this repo as a team marketplace or add the MCP URL as a custom server.
 
-Until then, add this repo as a marketplace:
+**Grok Build:**
 
 ```bash
 grok plugin marketplace add theaverageapp/grok-plugins
-grok plugin install trainedby --trust
 grok plugin install streeq --trust
+grok plugin install trainedby --trust
 ```
 
-Or add the MCP URLs as custom connectors at [grok.com/connectors](https://grok.com/connectors).
+**Grok (grok.com):** grok.com/connectors, New Connector, Custom, then paste the MCP URL.
 
-## Network and auth
+## Sign-in
 
-- TRAINEDBY: `https://mcp.trainedby.fit/mcp` — Auth0 `https://trainedby-mcp.us.auth0.com`
-- STREEQ: `https://mcp.streeq.app/streeq/mcp` — Auth0 `https://trainedby-mcp.us.auth0.com`
-
-OAuth scopes are advertised on each product's protected-resource metadata. The plugins request only those hosted servers.
+Both servers use OAuth 2.1 with PKCE. The sign-in service is `https://mcp.trainedby.fit` (advertised in each server's protected-resource metadata). Each server asks only for the permissions listed on its sign-in screen.
 
 ## License
 
-MIT. Product trademarks remain Average People Ltd.
+MIT. STREEQ and TRAINEDBY are products of TRAINEDBY FIT LTD.

@@ -1,0 +1,16 @@
+{
+  "name": "trainedby",
+  "displayName": "TRAINEDBY",
+  "version": "1.1.0",
+  "description": "Run your coaching roster from your AI: who needs you today, each client's week, check-ins, and plan drafts you approve before anything reaches a client. Sign in with your TRAINEDBY coach account.",
+  "author": {
+    "name": "TRAINEDBY FIT LTD",
+    "email": "viv@trainedby.fit",
+    "url": "https://www.trainedby.fit"
+  },
+  "homepage": "https://www.trainedby.fit/connect-ai",
+  "repository": "https://github.com/theaverageapp/grok-plugins",
+  "license": "MIT",
+  "keywords": ["mcp", "coaching", "personal-trainer", "fitness", "trainedby"],
+  "logo": "assets/logo.svg"
+}

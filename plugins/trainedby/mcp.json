@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "trainedby": {
+      "type": "streamable-http",
+      "url": "https://mcp.trainedby.fit/mcp"
+    }
+  }
+}
